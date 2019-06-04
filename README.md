@@ -6,7 +6,7 @@ This is the project dealing with **Particle Image Velocimetry** based on two alg
 
 The GUI files help user to modify the parameters in the algorithm more easily.
 
-**Note: CNN method is not public.**
+**Note: CNN method is not public. If you are interested in this part, I can show it in person.**
 
 ## Packages:
 OS: **Windows10**.
