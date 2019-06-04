@@ -1,4 +1,4 @@
-# deepPIV
+# pyPIV
 
 This is the project dealing with **Particle Image Velocimetry** based on two algorithm:
 #### 1. Direct Cross Correlation (DCC)
