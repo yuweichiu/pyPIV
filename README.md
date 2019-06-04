@@ -6,21 +6,20 @@ This is the project dealing with **Particle Image Velocimetry** based on two alg
 
 The GUI files help user to modify the parameters in the algorithm more easily.
 
+**Note: CNN method is not public.**
+
 ## Packages:
 OS: **Windows10**.
 
 Package: Listed in "requirements.txt", just install those packages by <code>pip install -r requirements.txt</code>.
 
-**Note: Tensorflow-gpu required!**
+**Note: Only CNN method requires tensorflow-gpu!**
 
 
 ## Simple Tutorial:
 ### 1. Run the scripts:
 To use DCC method:
 <code>python PIV_DCC_gui.py</code>
-
-To use CNN method:
-<code>python PIV_CNN_gui.py</code>
 
 
 ### 2. Browse the images for analyzing:
@@ -40,34 +39,15 @@ The SA is the area that expanding from IA. In this area, it will calculate the r
 
 >If you choose "PIV_DCC_gui.py" to execute, the matching algorithm will be **Direct Cross-Correlation**;
 
->If "PIV_CNN_gui.py", it will be **Convolutional Neural Network**.
-
-**Note** In CNN, the IA on all grid points will become the input data, and each IA will be label to independent category by one-hot encode. Then after training, CNN will be used to detect each SA for matching.
-
 
 #### 3.2 Time interval
 This will be set as the time interval between each frame
 >For example, the term is 0.02 sec only for Case2.
 
 
-#### 3.3 Sub-pixel Fix
-This will only be need in the **"PIV_CNN_gui.py"**.
-
-The pixel diameter should be set as the most governing diameters in all the particle in the frame.
->For example, in Case2, it should be set as 10 pixels.
-
-The intensity threshold is used to mark the particle position in the frame.
-
-Click the button "check", you will see two figure in the dialog, the move your mouse into the axis, the tracer will show the value of raw intensity of image and the intensity after filter.
-
-Where the marker mark up is the particle whose intensity after filter is higher then the threshold.
->For example, in Case2, it should be set as 0.05.
-
 
 ### 4. Setting the step of grid:
 Block "Grid Step" will define the space between the grids.
-
-For CNN, it will be not recommand to set a too small step due to the overlapping ration between each IA might caused the difficulty of training.
 
 >For example, use (32,32) as the steps 
 
@@ -76,15 +56,9 @@ For CNN, it will be not recommand to set a too small step due to the overlapping
 Click the button "Draw" in the block "ROI" to star draw a rectangular area for analysis, or you can directly key-in the position and size of ROI.
 
 
-### 6. Training parameter:
-This is only in **"PIV_CNN_gui.py"**.
-
-You can set some basic parameters in the network training, but in this example, I'm going to use the default values.
-
-
-### 7. Run:
+### 6. Run:
 Press "Run" button and it will pop up a dialog to let you specify the directory you want to save the results.
->For example, click <code>...</code> and make a new folder: .\example\results_case2
+>For example, click <code>...</code> and make a new folder: .\example\results
 
 Also, if you want to have the velocity results in the meter per second, you can check the radio buttom on "Yes" on the Calibration block, and select the calibration data by browsing.
 >For example, click <code>...</code> then change the direction to .\example\calib\Case2\img_ref.csv
@@ -99,5 +73,5 @@ After analysis was done, close the window and then execute the script in termina
 
 In this GUI program, you can browse the folder you just created for the results of the PIV analysis, then plot the velocity field, contour, or streamlines with the results in instantaneous or average velocity.
 
->For example, browse the directory: .\example\results_case2, and try those button in the block "Plot"
+>For example, browse the directory: .\example\results, and try those button in the block "Plot"
 
