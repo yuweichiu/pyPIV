@@ -1,0 +1,112 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'deepPIV.ui'
+#
+# Created by: PyQt5 UI code generator 5.11.3
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(1440, 900)
+        font = QtGui.QFont()
+        font.setFamily("微軟正黑體")
+        MainWindow.setFont(font)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.gridLayout = QtWidgets.QGridLayout(self.centralwidget)
+        self.gridLayout.setObjectName("gridLayout")
+        self.scrollArea = QtWidgets.QScrollArea(self.centralwidget)
+        self.scrollArea.setWidgetResizable(True)
+        self.scrollArea.setObjectName("scrollArea")
+        self.scrollAreaWidgetContents = QtWidgets.QWidget()
+        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 1420, 839))
+        self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
+        self.verticalLayout = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents)
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.MainGridLayout = QtWidgets.QGridLayout()
+        self.MainGridLayout.setObjectName("MainGridLayout")
+        self.verticalLayout.addLayout(self.MainGridLayout)
+        self.scrollArea.setWidget(self.scrollAreaWidgetContents)
+        self.gridLayout.addWidget(self.scrollArea, 0, 0, 1, 1)
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 1440, 21))
+        self.menubar.setObjectName("menubar")
+        self.menuFile = QtWidgets.QMenu(self.menubar)
+        self.menuFile.setObjectName("menuFile")
+        self.menuImage = QtWidgets.QMenu(self.menubar)
+        self.menuImage.setObjectName("menuImage")
+        self.menuGround_Reference_Points = QtWidgets.QMenu(self.menuImage)
+        self.menuGround_Reference_Points.setObjectName("menuGround_Reference_Points")
+        self.menuPIV = QtWidgets.QMenu(self.menubar)
+        self.menuPIV.setObjectName("menuPIV")
+        self.menuVisualization = QtWidgets.QMenu(self.menubar)
+        self.menuVisualization.setObjectName("menuVisualization")
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+        self.actionNew = QtWidgets.QAction(MainWindow)
+        self.actionNew.setObjectName("actionNew")
+        self.actionLoad = QtWidgets.QAction(MainWindow)
+        self.actionLoad.setObjectName("actionLoad")
+        self.actionOrtho_Rectification = QtWidgets.QAction(MainWindow)
+        self.actionOrtho_Rectification.setObjectName("actionOrtho_Rectification")
+        self.actionDirect_Cross_Correlation = QtWidgets.QAction(MainWindow)
+        self.actionDirect_Cross_Correlation.setObjectName("actionDirect_Cross_Correlation")
+        self.actionConvolutional_Neural_Network = QtWidgets.QAction(MainWindow)
+        self.actionConvolutional_Neural_Network.setObjectName("actionConvolutional_Neural_Network")
+        self.actionRead_from_CSV_file = QtWidgets.QAction(MainWindow)
+        self.actionRead_from_CSV_file.setObjectName("actionRead_from_CSV_file")
+        self.actionPick_and_type = QtWidgets.QAction(MainWindow)
+        self.actionPick_and_type.setObjectName("actionPick_and_type")
+        self.actionPlot = QtWidgets.QAction(MainWindow)
+        self.actionPlot.setObjectName("actionPlot")
+        self.menuFile.addAction(self.actionNew)
+        self.menuFile.addAction(self.actionLoad)
+        self.menuGround_Reference_Points.addAction(self.actionRead_from_CSV_file)
+        self.menuGround_Reference_Points.addAction(self.actionPick_and_type)
+        self.menuImage.addAction(self.menuGround_Reference_Points.menuAction())
+        self.menuImage.addAction(self.actionOrtho_Rectification)
+        self.menuPIV.addAction(self.actionDirect_Cross_Correlation)
+        self.menuPIV.addAction(self.actionConvolutional_Neural_Network)
+        self.menuVisualization.addAction(self.actionPlot)
+        self.menubar.addAction(self.menuFile.menuAction())
+        self.menubar.addAction(self.menuImage.menuAction())
+        self.menubar.addAction(self.menuPIV.menuAction())
+        self.menubar.addAction(self.menuVisualization.menuAction())
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "DeepPIV by Y.W.Chiu"))
+        self.menuFile.setTitle(_translate("MainWindow", "Project"))
+        self.menuImage.setTitle(_translate("MainWindow", "Image"))
+        self.menuGround_Reference_Points.setTitle(_translate("MainWindow", "Ground Reference Points"))
+        self.menuPIV.setTitle(_translate("MainWindow", "PIV"))
+        self.menuVisualization.setTitle(_translate("MainWindow", "Visualization"))
+        self.actionNew.setText(_translate("MainWindow", "New"))
+        self.actionLoad.setText(_translate("MainWindow", "Load"))
+        self.actionOrtho_Rectification.setText(_translate("MainWindow", "Ortho-Rectification"))
+        self.actionDirect_Cross_Correlation.setText(_translate("MainWindow", "Direct Cross-Correlation"))
+        self.actionConvolutional_Neural_Network.setText(_translate("MainWindow", "Convolutional Neural Network"))
+        self.actionRead_from_CSV_file.setText(_translate("MainWindow", "Read from CSV file"))
+        self.actionPick_and_type.setText(_translate("MainWindow", "Pick and type"))
+        self.actionPlot.setText(_translate("MainWindow", "Plot"))
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    MainWindow = QtWidgets.QMainWindow()
+    ui = Ui_MainWindow()
+    ui.setupUi(MainWindow)
+    MainWindow.show()
+    sys.exit(app.exec_())
+
