@@ -4,6 +4,12 @@
     <list default="true" id="3f48e15e-9b1f-4346-b9b2-cfd10835b9a3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/results/inst_vel/inst_[frame_0000_ortho]_[frame_0001_ortho].csv" beforeDir="false" afterPath="$PROJECT_DIR$/example/results/inst_vel/inst_[frame_0000_ortho]_[frame_0001_ortho].csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/results/inst_vel/inst_[frame_0001_ortho]_[frame_0002_ortho].csv" beforeDir="false" afterPath="$PROJECT_DIR$/example/results/inst_vel/inst_[frame_0001_ortho]_[frame_0002_ortho].csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/results/inst_vel/inst_[frame_0002_ortho]_[frame_0003_ortho].csv" beforeDir="false" afterPath="$PROJECT_DIR$/example/results/inst_vel/inst_[frame_0002_ortho]_[frame_0003_ortho].csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/results/inst_vel/inst_[frame_0003_ortho]_[frame_0004_ortho].csv" beforeDir="false" afterPath="$PROJECT_DIR$/example/results/inst_vel/inst_[frame_0003_ortho]_[frame_0004_ortho].csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/results/param/piv_grid.csv" beforeDir="false" afterPath="$PROJECT_DIR$/example/results/param/piv_grid.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/results/param/piv_grid_nx_ny.csv" beforeDir="false" afterPath="$PROJECT_DIR$/example/results/param/piv_grid_nx_ny.csv" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,7 +22,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/toolbox/image.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
+            <state relative-caret-position="190">
               <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
             </state>
           </provider>
@@ -26,8 +32,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="228">
-                <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+              <first_editor relative-caret-position="724">
+                <caret line="90" column="22" selection-start-line="90" selection-start-column="22" selection-end-line="90" selection-end-column="22" />
               </first_editor>
               <second_editor />
             </state>
@@ -70,7 +76,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -93,6 +98,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -137,7 +143,21 @@
       <option name="project" value="LOCAL" />
       <updated>1559609460729</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="'files'">
+      <created>1559610034012</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1559610034012</updated>
+    </task>
+    <task id="LOCAL-00004" summary="'files'">
+      <created>1559610060865</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1559610060865</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -172,7 +192,7 @@
     <entry file="file://$PROJECT_DIR$/src/toolbox/detect.py" />
     <entry file="file://$PROJECT_DIR$/src/toolbox/image.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
+        <state relative-caret-position="190">
           <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
         </state>
       </provider>
@@ -180,8 +200,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="228">
-            <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <first_editor relative-caret-position="724">
+            <caret line="90" column="22" selection-start-line="90" selection-start-column="22" selection-end-line="90" selection-end-column="22" />
           </first_editor>
           <second_editor />
         </state>
